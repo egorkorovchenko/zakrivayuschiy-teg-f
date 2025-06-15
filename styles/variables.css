@@ -1,1 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --inter-variable: "Inter-Variable", monospace;
+  --pressstart2p: "Press Start 2P", monospace; 
+  --card__title-font-weight: 700;
+  --card__content-font-weight: 400;
+  --content-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+  --header__title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header__subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --header__inline-padding: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
+  --header__block-padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  --card-image-height: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  --bg-color: #fff;
+  --decor-color: #000;
+  --backdrop-color: #000;
+  --contour-color: #000;
+  --animation-fill-color: #FF0000;
+  --main-body-color: #FF0000;
+  --core-color: #fff;
+  --sparks-color: #FF0000;
+}
