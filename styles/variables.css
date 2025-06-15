@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --inter-variable: "Inter-Variable", monospace;
-  --pressstart2p: "Press Start 2P", monospace; 
+  --pressstart2p: "Press Start 2P", monospace;
   --card__title-font-weight: 700;
   --card__content-font-weight: 400;
   --content-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);

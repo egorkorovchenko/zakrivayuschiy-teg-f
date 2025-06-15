@@ -11,5 +11,31 @@
   src: url(./Inter-Variable.woff2) format("woff2 supports variations"),
     url(./Inter-Variable.woff2) format("woff2-variations");
   font-display: swap;
-  font-weight: 400 700;
+  font-weight: 400 785;
+}
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--inter-variable);
+  }
+
+  .header__title {
+    font-weight: normal;
+    font-size: var(--header__title-font-size);
+  }
+
+  .header__subtitle {
+    font-weight: normal;
+    font-size: var(--header__subtitle-font-size);
+  }
+
+  .card__title {
+    font-weight: var(--card__title-font-weight);
+    font-size: 1.125rem;
+  }
+
+  .card__content {
+    font-weight: var(--card__content-font-weight);
+    font-size: 1.125rem;
+  }
 }

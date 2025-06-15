@@ -26,32 +26,6 @@
   min-block-size: 100dvb;
 }
 
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--inter-variable);
-  }
-
-  .header__title {
-    font-weight: normal;
-    font-size: var(--header__title-font-size);
-  }
-
-  .header__subtitle {
-    font-weight: normal;
-    font-size: var(--header__subtitle-font-size);
-  }
-
-  .card__title {
-    font-weight: var(--card__title-font-weight);
-    font-size: 1.125rem;
-  }
-
-  .card__content {
-    font-weight: var(--card__content-font-weight);
-    font-size: 1.125rem;
-  }
-}
-
 @supports (text-stroke: 1px var(--bg-color)) {
   .label {
     text-stroke: 0.5px var(--bg-color);
@@ -298,6 +272,38 @@
 .sparks {
   opacity: 0;
   fill: var(--animation-fill-color);
+}
+
+.filter-brightness {
+  filter: brightness(50%);
+}
+
+.filter-contrast {
+  filter: contrast(20%);
+}
+
+.filter-blur {
+  filter: blur(2px);
+}
+
+.filter-opacity {
+  filter: opacity(50%);
+}
+
+.filter-grayscale {
+  filter: grayscale(0.8);
+}
+
+.filter-saturate {
+  filter: saturate(200%);
+}
+
+.filter-hue-rotate-saturate {
+  filter: hue-rotate(-90deg) saturate(200%);
+}
+
+.filter-sepia {
+  filter: sepia(80%);
 }
 
 @media (width <= 375px) {
