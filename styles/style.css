@@ -24,6 +24,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-variation-settings: 'wght' normal;
 }
 
 @supports (text-stroke: 1px var(--bg-color)) {
@@ -74,6 +75,7 @@
 }
 
 .card__title {
+  position: relative;
   padding: 5px 10px;
 }
 
@@ -298,8 +300,8 @@
   filter: saturate(200%);
 }
 
-.filter-hue-rotate-saturate {
-  filter: hue-rotate(-90deg) saturate(200%);
+.filter-hue-rotate-invert {
+  filter: hue-rotate(-90deg) invert(0.7);
 }
 
 .filter-sepia {
