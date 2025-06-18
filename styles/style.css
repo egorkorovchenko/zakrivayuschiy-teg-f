@@ -29,6 +29,7 @@
 
 @supports (text-stroke: 1px var(--bg-color)) {
   .label {
+    text-shadow: none;
     text-stroke: 0.5px var(--bg-color);
   }
 }
@@ -102,12 +103,13 @@
 
 .card__title {
   position: relative;
+  border-bottom: 2px solid var(--decor-color);
   padding: 5px 10px;
   line-height: var(--card__title-line-height);
   font-variation-settings: "wght" var(--weight-bold);
 }
 
-.picture {
+.picture-wrapper {
   position: relative;
   display: block;
   height: var(--card-image-height);
@@ -117,8 +119,6 @@
   box-sizing: unset;
   max-width: 100%;
   height: var(--card-image-height);
-  border-top: 2px solid var(--decor-color);
-  border-bottom: 2px solid var(--decor-color);
   object-fit: cover;
   object-position: center;
 }
@@ -129,7 +129,8 @@
 }
 
 .card__content:nth-child(3) {
-  padding: 29px 25px 0 25px;
+  border-top: 2px solid var(--decor-color);
+  padding: 25px 25px 0 25px;
   line-height: var(--card__content-line-height);
 }
 
@@ -139,8 +140,9 @@
 
 .label {
   position: absolute;
-  top: 27px;
+  top: 25px;
   right: 25px;
+  z-index: 1;
   opacity: 50%;
   font-family: var(--accent-font);
   font-size: 0.875rem;
@@ -270,7 +272,7 @@
 .dialog__button {
   grid-column: span 2;
   grid-row-start: 3;
-  padding: 6.5px 0;
+  padding: 9.5px 0;
 }
 
 .contour {
@@ -279,7 +281,8 @@
 
 .main-body {
   fill: var(--core-color);
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s;
+  transition-delay: 0s;
 }
 
 .core {
@@ -326,7 +329,7 @@
 
 @media (width <= 375px) {
   .card__content:nth-child(3) {
-    padding: 25px 25px 0 25px;
+    padding: 21px 25px 0 25px;
   }
 
   .label {

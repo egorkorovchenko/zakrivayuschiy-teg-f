@@ -62,10 +62,12 @@
 
 .card__icon-button:active .core {
   fill: var(--main-body-color);
+  transition-delay: 0s;
 }
 
 .card__icon-button:active .main-body {
   fill: var(--main-body-color);
+  transition-delay: 0.05s;
 }
 
 .card__icon-button:not(:active) .core {
@@ -86,6 +88,7 @@
 .like-icon.is-liked .main-body {
   fill: var(--main-body-color);
   transition: fill 0.3s;
+  transition-delay: 0s;
 }
 
 .like-icon.is-liked .core {
