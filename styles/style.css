@@ -240,9 +240,13 @@
 }
 
 .dialog[open] {
-  display: grid;
   column-gap: 20px;
   padding: 30px;
+}
+
+.dialog-wrapper {
+  display: grid;
+  column-gap: 20px;
 }
 
 .dialog-floppy {
